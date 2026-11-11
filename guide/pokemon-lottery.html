@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="ポケモンカード（ポケカ）の抽選販売について、オンライン抽選・アプリ抽選・店頭受付の違い、応募から当選・購入までの流れ、応募前に確認したい注意点をまとめました。" />
+<link rel="icon" href="data:," />
+<title>ポケモンカード抽選販売の応募方法と注意点｜トレカ抽選ナビ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+--bg: #f2f3f1;
+--surface: #ffffff;
+--surface-2: #eceee9;
+--ink: #191c1f;
+--ink-2: #4c545c;
+--ink-3: #7d868e;
+--line: #d9dcd6;
+--accent: #c8102e;
+--poke: #cf2a1c;
+--poke-soft: #fdeceb;
+--onep: #0a6373;
+--onep-soft: #e6f3f5;
+--shadow: 0 1px 2px rgba(20, 24, 28,.06), 0 8px 24px -12px rgba(20, 24, 28,.18);
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--bg: #121417;
+--surface: #1c1f24;
+--surface-2: #24272d;
+--ink: #eceef0;
+--ink-2: #b6bdc4;
+--ink-3: #8b939c;
+--line: #33373e;
+--accent: #ff5b74;
+--poke: #ff6a58;
+--poke-soft: #3a2320;
+--onep: #4cc3d4;
+--onep-soft: #17303a;
+--shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -12px rgba(0,0,0,.6);
+}
+}
+* { box-sizing: border-box;}
+html { -webkit-text-size-adjust: 100%;}
+body {
+margin: 0;
+background: var(--bg);
+color: var(--ink);
+font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", sans-serif;
+font-size: 15px;
+line-height: 1.65;
+}
+a { color: inherit;}
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 16px 64px;}
+.masthead { padding: 28px 0 6px;}
+.mast-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap;}
+.name-stamp {
+display: inline-block;
+color: var(--accent);
+border: 3px solid var(--accent);
+border-radius: 6px;
+padding: 0.18em;
+margin-right:.12em;
+transform: rotate(-3deg);
+font-size:.82em;
+vertical-align:.08em;
+}
+.asof {
+flex: none;
+font-family: "IBM Plex Mono", monospace;
+font-size: 12.5px;
+color: var(--ink-2);
+background: var(--surface);
+border: 1px solid var(--line);
+border-radius: 999px;
+padding: 6px 14px;
+}
+.asof b { color: var(--accent); font-weight: 600;}
+.site-foot { margin-top: 52px; border-top: 1px solid var(--line); padding-top: 18px; color: var(--ink-3); font-size: 12.5px;}
+.site-foot p { margin: 0 0 6px;}
+.disc b { color: var(--ink-2);}
+.ad-slot{margin:20px auto;max-width:728px;text-align:center}
+.ad-slot .ad-label{display:block;font-size:11px;color:#999;letter-spacing:.25em;margin-bottom:4px}
+/* ---------- subpages ---------- */
+.site-mini { font-size: 20px; font-weight: 900; letter-spacing:.02em; text-decoration: none;}
+.page-h1 { font-size: clamp(24px, 4.8vw, 34px); font-weight: 900; line-height: 1.35; margin: 16px 0 6px;}
+.page-lead { color: var(--ink-2); font-size: 14.5px; margin: 0; max-width: 40em;}
+.back-row { margin-top: 30px; font-size: 14px;}
+.back-link { font-weight: 700;}
+/* ---------- guide prose ---------- */
+.prose { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 10px 20px 18px; margin-top: 18px;}
+.prose h2 { font-size: 18px; font-weight: 900; margin: 24px 0 6px;}
+.prose h2:first-child { margin-top: 10px;}
+.prose h3 { font-size: 15.5px; font-weight: 900; margin: 18px 0 4px;}
+.prose p { margin: 8px 0; font-size: 14.5px;}
+.prose ul, .prose ol { margin: 8px 0; padding-left: 1.4em; font-size: 14.5px;}
+.prose li { margin: 5px 0;}
+.faq dt { font-weight: 900; margin-top: 16px; font-size: 14.5px;}
+.faq dd { margin: 4px 0 0; font-size: 14.5px;}
+.rel-links { margin-top: 26px; font-size: 14px;}
+.rel-links p { margin: 4px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+<div class="mast-top">
+<a class="site-mini" href="../index.html"><span class="name-stamp">抽選</span>トレカ抽選ナビ</a>
+</div>
+</header>
+
+<h1 class="page-h1">ポケモンカード抽選販売の応募方法と注意点</h1>
+<p class="page-lead">人気の拡張パックは、発売日に店頭へ行けば買えるとは限らなくなってきました。事前の抽選で購入者を決める販売店が増えているため、このページではポケカの抽選販売の一般的な仕組みと、応募のときに気をつけたい点を整理しました。</p>
+
+<div class="prose">
+<h2>抽選販売の主なタイプ</h2>
+<p>ひとくちに抽選と言っても、応募の窓口はいくつかに分かれます。自分が応募したい販売店がどのタイプかで、準備するものも変わってきます。</p>
+<h3>オンライン抽選</h3>
+<p>ポケモンセンターオンラインや量販店の通販サイトなど、Webページから応募するタイプです。会員登録が前提になることがほとんどで、受付期間中にログインして手続きを済ませます。結果はメールやマイページで確認する形式が一般的です。店舗によっては、本人認証を済ませた人向けの枠とそうでない枠が分かれていることもあります。</p>
+<h3>アプリ抽選</h3>
+<p>店舗の公式アプリやLINEアカウントから応募するタイプです。受け取る店舗を指定したり、当選の知らせがアプリのクーポンや通知で届いたりと、仕組みは店舗ごとにまちまちです。ふだん使っていないアプリが対象になることもあるので、受付が始まってから慌てて登録するより、発売が近づいたら早めに用意しておくほうが落ち着いて応募できます。</p>
+<h3>店頭受付</h3>
+<p>店舗に出向いて申し込むタイプです。ポイントカードや公式アプリの提示を求められることがあり、オンラインからは応募できません。受付期間が数日だけということも珍しくないので、行きつけの店舗の告知をこまめに見る必要があります。</p>
+
+<h2>応募から購入までの流れ</h2>
+<p>大まかな流れはどのタイプでも似ています。まず応募条件を確認します。会員登録の要否だけでなく、過去の購入履歴などが条件になっている抽選もあるため、募集ページの条件は最初に目を通してください。次に、受付期間内に応募します。締切直前はアクセスが集中しがちなので、余裕を持って済ませるのが無難です。</p>
+<p>受付が終わると結果発表です。発表日は店舗ごとに異なり、当選した人にだけ連絡する方式もあれば、マイページで全員が結果を確認できる方式もあります。当選したら、購入の手続きに移ります。オンラインの抽選なら期限内に注文と支払いを済ませ、店頭受取の抽選なら指定された期間に店舗へ受け取りに行きます。この購入期限を過ぎると当選が無効になるのが一般的なので、発表日と購入期間はセットで覚えておきましょう。</p>
+
+<h2>応募前に確認したいこと</h2>
+<p>応募条件は店舗ごとに違います。本人認証が必要な枠とそうでない枠が分かれている場合、自分の状態と違う枠に応募すると落選の扱いになることがあります。枠の説明は募集ページに書かれているので、勢いで応募せず一度読んでから進めてください。</p>
+<p>複数応募の扱いにも注意が要ります。「1人1回まで」「応募は1店舗のみ」といった制限が付く抽選は多く、同じ販売店で重ねて応募すると無効になる場合があります。別々の販売店がそれぞれ行っている抽選は別の募集ですが、それぞれの条件に従うのが前提です。</p>
+<p>また、人気商品の抽選では転売対策が行われることがあります。受け渡しのときにシュリンクを開封されたり外箱を回収されたり、本人確認を求められたりする場合があるので、店舗の案内であらかじめ確認しておくと当日に戸惑いません。</p>
+<p>最後に、情報の出どころについて。SNSやまとめサイトには古い情報や推測が混ざることがあります。受付期間や条件のような大事な部分は、必ず公式ページで裏取りしてから応募してください。このサイトのトップページでも、公式発表を確認できた抽選だけを掲載しています。</p>
+
+<h2>よくある質問</h2>
+<dl class="faq">
+<dt>Q. 落選した場合、連絡は来ますか？</dt>
+<dd>店舗によります。当選した人にだけメールやアプリ通知を送る方式もあれば、マイページで全員分の結果が見られる方式もあります。発表日を過ぎても連絡がないときは、まず応募した店舗のマイページや案内を確認してみてください。</dd>
+<dt>Q. 当選したのに購入し忘れたらどうなりますか？</dt>
+<dd>購入期限を過ぎると、当選は無効になるのが一般的です。再抽選や繰り上げ当選の扱いは店舗ごとに異なるので、当選時の案内で確認してください。発表日が分かった時点で、購入期間の最終日をカレンダーに入れておくと安心です。</dd>
+<dt>Q. 同じ商品の抽選に、何店舗も応募していいですか？</dt>
+<dd>販売店が違えば別の募集なので、それぞれ応募すること自体は問題ありません。ただし店舗ごとに「1人1回まで」「1店舗のみ」といった条件があるため、各抽選の募集要項に従ってください。</dd>
+<dt>Q. 店頭で受け取るときに必要なものはありますか？</dt>
+<dd>本人確認書類の提示や、アプリの当選画面の表示を求められる場合があります。店舗によって異なるので、受け取り前に当選案内を読み直しておきましょう。</dd>
+</dl>
+</div>
+
+<div class="rel-links">
+<p>関連ページ：<a href="../products/hadou-seeker.html">「ハドウシーカー」の抽選一覧</a>／<a href="../products/30th-celebration.html">「30th CELEBRATION」の抽選・再販一覧</a></p>
+</div>
+
+<div class="ad-slot"><span class="ad-label">広告</span><script src="https://adm.shinobi.jp/s/a2f0b3841801c1a9c8ac6431b92c792e"></script></div>
+
+<p class="back-row"><a class="back-link" href="../index.html">← トレカ抽選ナビ トップへ戻る（全商品の抽選一覧）</a></p>
+
+<footer class="site-foot">
+<p class="disc"><b>ご利用にあたって：</b>このページの内容は一般的な抽選販売の仕組みを説明したものです。個別の抽選の条件や手続きは販売店ごとに異なりますので、応募前に各公式ページでご確認ください。</p>
+<p>本ページは非公式の情報まとめです。抽選への応募は、各公式ページからご自身で行ってください。</p>
+<p>本サイトでは第三者配信の広告サービスを利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。</p>
+</footer>
+</div>
+
+</body>
+</html>

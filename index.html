@@ -310,6 +310,10 @@ flex: none; min-width: 86px; color: var(--ink);
 .disc b { color: var(--ink-2);}
 .ad-slot{margin:20px auto;max-width:728px;text-align:center}
 .ad-slot .ad-label{display:block;font-size:11px;color:#999;letter-spacing:.25em;margin-bottom:4px}
+.prod-link { font-size: 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;}
+.guides { margin-top: 52px;}
+.guide-card p { margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2);}
+.guide-card a { font-weight: 900; font-size: 14px;}
 </style>
 </head>
 <body>
@@ -376,6 +380,23 @@ flex: none; min-width: 86px; color: var(--ink);
 </section>
 
 <div class="ad-slot"><span class="ad-label">広告</span><script src="https://adm.shinobi.jp/s/a2f0b3841801c1a9c8ac6431b92c792e"></script></div>
+
+<section class="guides" aria-labelledby="guideTitle">
+<h2 class="sec-title" id="guideTitle">抽選ガイド</h2>
+<p class="sec-lead">初めてトレカの抽選に応募する人向けに、仕組みと注意点をまとめました。</p>
+<div class="sched-grid">
+<div class="sched-box guide-card">
+<h3><span class="sched-dot dot-poke"></span>ポケモンカード</h3>
+<p>ポケモンセンターオンラインの認証枠や量販店のアプリ抽選など、ポケカ抽選のタイプの違いと、応募から購入までの流れを解説します。</p>
+<a href="guide/pokemon-lottery.html">ポケカ抽選ガイドを読む</a>
+</div>
+<div class="sched-box guide-card">
+<h3><span class="sched-dot dot-onep"></span>ワンピースカード</h3>
+<p>プレミアムバンダイ、公式ショップの事前抽選、量販店のアプリ抽選など、チャネルごとの違いと注意点を解説します。</p>
+<a href="guide/onepiece-lottery.html">ワンピースカード抽選ガイドを読む</a>
+</div>
+</div>
+</section>
 
 <footer class="site-foot">
 <p class="disc"><b>ご利用にあたって：</b>掲載情報は各販売店・公式サイトの発表をもとに作成していますが、受付期間・条件は変更・中止される場合があります。<b>情報は各公式サイトでご確認ください。</b>「未確認」と表示している項目は、確認時点で公式発表から特定できなかったものです。</p>
@@ -749,6 +770,20 @@ return "wait"; // 発表日未確認のものは結果待ち扱い
 var STATUS_LABEL = { open: "受付中", soon: "受付開始前", wait: "結果発表待ち", end: "終了"};
 var STATUS_RANK = { open: 0, soon: 1, wait: 2, end: 3};
 
+/* ===== 商品別ページへのリンク ===== */
+var PRODUCT_PAGES = [
+{ match: "ハドウシーカー", slug: "hadou-seeker"},
+{ match: "30th CELEBRATION", slug: "30th-celebration"},
+{ match: "神の支配", slug: "op18"},
+{ match: "Heroines Edition", slug: "eb05-heroines"}
+];
+function productSlug(item) {
+for (var i = 0; i < PRODUCT_PAGES.length; i++) {
+if (item.product.indexOf(PRODUCT_PAGES[i].match) !== -1) return PRODUCT_PAGES[i].slug;
+}
+return null;
+}
+
 function esc(s) {
 return String(s).replace(/[&<>"']/g, function (c) {
 return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c];
@@ -794,6 +829,7 @@ return '<div class="countdown"><span class="cd-label">この抽選は終了し�
 
 function cardHtml(item, now) {
 var status = getStatus(item, now);
+var slug = productSlug(item);
 var gameLabel = item.game === "poke"? "ポケカ": "ワンピース";
 var chips = '<span class="chip chip-' + status + '">' + STATUS_LABEL[status] + "</span>";
 
@@ -830,7 +866,9 @@ countdownHtml(item, status, now) +
 "</div>" +
 '<div class="card-foot"><a class="official-btn" href="' + esc(item.url) + '" target="_blank" rel="noopener">公式ページで確認・応募' +
 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></a>' +
-'<span class="url-note">' + esc(item.urlNote || "") + "</span></div>" +
+'<span class="url-note">' + esc(item.urlNote || "") + "</span>" +
+(slug? '<a class="prod-link" href="products/' + slug + '.html">この商品の全販売店を見る</a>': "") +
+"</div>" +
 "</article>";
 }
 
