@@ -322,7 +322,7 @@ flex: none; min-width: 86px; color: var(--ink);
 <header class="masthead">
 <div class="mast-top">
 <h1 class="site-name"><span class="name-stamp">抽選</span>トレカ抽選ナビ</h1>
-<span class="asof">データ確認日 <b>2026年11月11日（水）</b></span>
+<span class="asof">データ確認日 <b>2026年11月13日（金）</b></span>
 </div>
 <p class="tagline">ポケモンカードとワンピースカードの抽選販売を、公式発表ベースでまとめた一覧。締切が近い順に並ぶので、応募し忘れ防止にどうぞ。応募は各公式ページから行ってください。</p>
 <div class="summary" id="summary" aria-live="polite"></div>
@@ -400,7 +400,7 @@ flex: none; min-width: 86px; color: var(--ink);
 
 <footer class="site-foot">
 <p class="disc"><b>ご利用にあたって：</b>掲載情報は各販売店・公式サイトの発表をもとに作成していますが、受付期間・条件は変更・中止される場合があります。<b>情報は各公式サイトでご確認ください。</b>「未確認」と表示している項目は、確認時点で公式発表から特定できなかったものです。</p>
-<p>データ確認日：2026年11月11日 ／ 本ページは非公式の情報まとめです。ポケモンカード・ワンピースカードの抽選への応募は、各公式ページからご自身で行ってください。</p>
+<p>データ確認日：2026年11月13日 ／ 本ページは非公式の情報まとめです。ポケモンカード・ワンピースカードの抽選への応募は、各公式ページからご自身で行ってください。</p>
 <p>本サイトでは第三者配信の広告サービスを利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。</p>
 </footer>
 </div>
@@ -408,7 +408,7 @@ flex: none; min-width: 86px; color: var(--ink);
 <script>
 "use strict";
 
-/* ===== 掲載データ（2026年11月11日 公式確認ベース） ===== */
+/* ===== 掲載データ（2026年11月13日 公式確認ベース） ===== */
 /* start/end/announce は JST の ISO 文字列。未確認は null のまま、表示側で「未確認」と出す */
 var ITEMS = [
 {
@@ -514,6 +514,23 @@ url: "https://bandainamco-am.co.jp/official_shop/onepiece-cardgame/news/importan
 urlNote: "バンダイナムコ 公式ショップお知らせ"
 },
 {
+id: "onep-edion-op18",
+game: "onep",
+product: "ブースターパック「神の支配」BOX",
+store: "エディオン",
+method: "オンライン",
+methodDetail: "専用フォームから応募、店頭受取",
+start: "2026-11-13T10:00:00+09:00",
+end: "2026-11-15T23:59:00+09:00",
+announce: "2026-11-20T23:59:00+09:00", announceText: "2026年11月20日（金）中（SMSで当選者のみ連絡）",
+purchase: "2026年11月21日（土）〜11月24日（火）店頭受取",
+price: "5,760円",
+limit: "1人1BOXまで・1回限り",
+note: "各種会員限定。BOX販売時はシール開封でのお渡し。",
+url: "https://edion-cp.com/onepi1121",
+urlNote: "エディオン 抽選ページ"
+},
+{
 id: "onep-aeon-iaeon-op18",
 game: "onep",
 product: "ブースターパック「神の支配」BOX",
@@ -564,6 +581,57 @@ limit: "1人1点",
 note: "過去2年の購入履歴などの応募条件あり。",
 url: "https://limited.yodobashi.com/",
 urlNote: "ヨドバシ 抽選販売ページ"
+},
+{
+id: "poke-rakuten-hadou",
+game: "poke",
+product: "MEGA 拡張パック「ハドウシーカー」BOX",
+store: "楽天ブックス",
+method: "オンライン",
+methodDetail: "楽天ブックス商品ページからエントリー、当選者のみ購入可",
+start: "2026-11-13T10:00:00+09:00",
+end: "2026-11-18T23:59:00+09:00",
+announce: "2026-11-29T10:00:00+09:00", announceText: "2026年11月29日（日）までにメールで連絡",
+purchase: "2026年11月29日（日）10:00〜12月3日（木）23:59（発送は11月下旬予定）",
+price: "6,006円",
+limit: "1人1点まで（複数商品に応募可だが当選は1商品のみ）",
+note: "楽天会員の住所登録が必須。支払いはクレジットカードのみ、配送は宅配・ポスト投函のみ。",
+url: "https://books.rakuten.co.jp/rb/18664603/",
+urlNote: "楽天ブックス 商品ページ"
+},
+{
+id: "poke-edion-hadou",
+game: "poke",
+product: "MEGA 拡張パック「ハドウシーカー」BOX",
+store: "エディオン",
+method: "オンライン",
+methodDetail: "専用フォームから応募、店頭受取またはネット配送",
+start: "2026-11-13T10:00:00+09:00",
+end: "2026-11-15T23:59:00+09:00",
+announce: "2026-11-26T23:59:00+09:00", announceText: "2026年11月26日（木）中（SMSで当選者のみ連絡）",
+purchase: "2026年11月27日（金）〜11月30日（月）店頭受取",
+price: "6,000円",
+limit: "1人1BOXまで・1回限り",
+note: "各種会員限定。ネットショップ受取枠は結果発表11月20日（金）中・購入11月20日（金）〜11月22日（日）23:59（事前決済）。トレカキャピタルとの二重応募は不可。BOX販売時はシュリンク外しでのお渡し。",
+url: "https://edion-cp.com/poke112701",
+urlNote: "エディオン 抽選ページ"
+},
+{
+id: "poke-edion-tc-hadou",
+game: "poke",
+product: "MEGA 拡張パック「ハドウシーカー」BOX",
+store: "トレカキャピタル（エディオン）",
+method: "オンライン",
+methodDetail: "専用フォームから応募、店頭受取",
+start: "2026-11-13T10:00:00+09:00",
+end: "2026-11-15T23:59:00+09:00",
+announce: "2026-11-26T23:59:00+09:00", announceText: "2026年11月26日（木）中（SMSで当選者のみ連絡）",
+purchase: "2026年11月27日（金）〜11月30日（月）店頭受取",
+price: "6,000円",
+limit: "1人最大2BOXまで・1回限り",
+note: "各種会員限定。エディオンとの二重応募は不可。BOX販売時はシュリンク外しでのお渡し。",
+url: "https://edion-cp.com/poke112702",
+urlNote: "トレカキャピタル 抽選ページ"
 },
 {
 id: "poke-tsutaya-hadou",
@@ -719,7 +787,8 @@ onep: [
 { date: "2026-11-21", label: "11/21", wd: "土", what: "ブースターパック「神の支配」発売", yen: "1BOX 5,760円"},
 { date: "2026-12-19", label: "12/19", wd: "土", what: "スタートデッキ発売", yen: "各1,430円"},
 { date: "2027-01-30", label: "2027/1/30", wd: "土", what: "エクストラブースター「EAST BLUE」発売", yen: null},
-{ date: "2027-02-27", label: "2027/2/27", wd: "土", what: "ブースターパック「応答せよ、世界」発売", yen: null}
+{ date: "2027-02-27", label: "2027/2/27", wd: "土", what: "ブースターパック「応答せよ、世界」発売", yen: null},
+{ date: "2027-04-24", label: "2027/4/24", wd: "土", what: "プレミアムエクストラブースター「夢の一枚」発売", yen: "1パック440円"}
 ]
 };
 
