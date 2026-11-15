@@ -322,7 +322,7 @@ flex: none; min-width: 86px; color: var(--ink);
 <header class="masthead">
 <div class="mast-top">
 <h1 class="site-name"><span class="name-stamp">抽選</span>トレカ抽選ナビ</h1>
-<span class="asof">データ確認日 <b>2026年11月14日（土）</b></span>
+<span class="asof">データ確認日 <b>2026年11月15日（日）</b></span>
 </div>
 <p class="tagline">ポケモンカードとワンピースカードの抽選販売を、公式発表ベースでまとめた一覧。締切が近い順に並ぶので、応募し忘れ防止にどうぞ。応募は各公式ページから行ってください。</p>
 <div class="summary" id="summary" aria-live="polite"></div>
@@ -400,7 +400,7 @@ flex: none; min-width: 86px; color: var(--ink);
 
 <footer class="site-foot">
 <p class="disc"><b>ご利用にあたって：</b>掲載情報は各販売店・公式サイトの発表をもとに作成していますが、受付期間・条件は変更・中止される場合があります。<b>情報は各公式サイトでご確認ください。</b>「未確認」と表示している項目は、確認時点で公式発表から特定できなかったものです。</p>
-<p>データ確認日：2026年11月14日 ／ 本ページは非公式の情報まとめです。ポケモンカード・ワンピースカードの抽選への応募は、各公式ページからご自身で行ってください。</p>
+<p>データ確認日：2026年11月15日 ／ 本ページは非公式の情報まとめです。ポケモンカード・ワンピースカードの抽選への応募は、各公式ページからご自身で行ってください。</p>
 <p>本サイトでは第三者配信の広告サービスを利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。</p>
 </footer>
 </div>
@@ -564,23 +564,6 @@ limit: "1人1回・1BOXまで",
 note: "自分の認証状態と違う枠に応募すると落選になるので注意。結果はマイページの抽選履歴一覧かメールで確認。",
 url: "https://www.pokemoncenter-online.com/9900000008482.html",
 urlNote: "ポケモンセンターオンライン 商品ページ"
-},
-{
-id: "poke-yodobashi-hadou",
-game: "poke",
-product: "MEGA 拡張パック「ハドウシーカー」BOX",
-store: "ヨドバシ・ドット・コム",
-method: "オンライン",
-methodDetail: "ブラウザからのみ応募可",
-start: "2026-11-10T11:00:00+09:00",
-end: "2026-11-11T10:59:00+09:00",
-announce: "2026-11-11T18:00:00+09:00", announceText: "2026年11月11日（水）18:00頃",
-purchase: "当選後〜2026年11月12日（木）23:59",
-price: "6,000円",
-limit: "1人1点",
-note: "過去2年の購入履歴などの応募条件あり。",
-url: "https://limited.yodobashi.com/",
-urlNote: "ヨドバシ 抽選販売ページ"
 },
 {
 id: "poke-rakuten-hadou",
@@ -786,6 +769,60 @@ limit: "1人1回・1店舗のみ",
 note: null,
 url: "https://www.biccamera.com/bc/c/info/order/lottery.jsp",
 urlNote: "ビックカメラ 抽選販売のご案内"
+},
+{
+id: "poke-kiddyland-hadou",
+game: "poke",
+product: "MEGA 拡張パック「ハドウシーカー」BOX",
+store: "キデイランド",
+storeVaries: true,
+method: "オンライン",
+methodDetail: "LivePocketから応募（対象店舗を選択）、店頭受取",
+start: "2026-11-16T10:00:00+09:00",
+end: "2026-11-18T23:59:00+09:00",
+announce: "2026-11-25T23:59:00+09:00", announceText: "2026年11月21日（土）〜11月25日（水）中までに",
+purchase: "2026年11月27日（金）〜11月29日（日）店頭受取",
+price: null,
+limit: "1人1回のみ",
+note: "チケット1枚につき最大30パック（1BOX）まで。シュリンク外し販売、身分証による本人確認あり。対象店舗はLivePocketで確認（大阪梅田店・二子玉川店ほか）。",
+url: "https://livepocket.jp/p/hpmzs",
+urlNote: "LivePocket キデイランド販売情報"
+},
+{
+id: "poke-kiddyland-30th",
+game: "poke",
+product: "拡張パック「30th CELEBRATION」BOX（再販分）",
+store: "キデイランド",
+storeVaries: true,
+method: "オンライン",
+methodDetail: "LivePocketから応募（対象店舗を選択）、店頭受取",
+start: "2026-11-16T10:00:00+09:00",
+end: "2026-11-18T23:59:00+09:00",
+announce: "2026-11-25T23:59:00+09:00", announceText: "2026年11月21日（土）〜11月25日（水）中までに",
+purchase: "2026年11月27日（金）〜11月29日（日）店頭受取",
+price: null,
+limit: "1人1回のみ",
+note: "再入荷品。チケット1枚につき最大20パック（1BOX）まで。シュリンク外し販売、身分証による本人確認あり。大阪梅田店で確認。",
+url: "https://livepocket.jp/p/hpmzs",
+urlNote: "LivePocket キデイランド販売情報"
+},
+{
+id: "poke-kiddyland-30th-set",
+game: "poke",
+product: "30th CELEBRATION カードセット 9種セット（再販）",
+store: "キデイランド",
+storeVaries: true,
+method: "オンライン",
+methodDetail: "LivePocketから応募（対象店舗を選択）、店頭受取",
+start: "2026-11-16T10:00:00+09:00",
+end: "2026-11-18T23:59:00+09:00",
+announce: "2026-11-25T18:00:00+09:00", announceText: "2026年11月25日（水）18:00頃まで",
+purchase: "2026年11月27日（金）〜11月29日（日）店頭受取",
+price: null,
+limit: "1人1回のみ",
+note: "二子玉川店で確認。チケット記載の期間内に来店が必要。",
+url: "https://livepocket.jp/p/hpmzs",
+urlNote: "LivePocket キデイランド販売情報"
 },
 {
 id: "onep-pbandai-eb05",
